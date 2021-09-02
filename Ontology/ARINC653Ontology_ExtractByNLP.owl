@@ -1,0 +1,3001 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/xian/ontologies/2021/3/untitled-ontology-48"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/xian/ontologies/2021/3/untitled-ontology-48">
+    <Prefix name="" IRI="http://www.semanticweb.org/xian/ontologies/2021/3/untitled-ontology-48"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BasicDataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blackboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buffer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CacheSettingType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiguredThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedBlackboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedBuffer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedQueuingPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedSamplingPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedSemaphore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreatedThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeadlineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmptyIndicatorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnumDataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErrorCodeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErrorIdentifierType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventStateType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemoryRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemorySectionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModuleHMTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingModeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartitionHMTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartitionTimeWindow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortDirectionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessStateType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueuingDisciplineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueuingPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReturnCodeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SamplingPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semaphore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartConditionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValidityType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Blackboard_has_EmptyIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Blackboard_has_WaitingProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Buffer_has_QueuingDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Buffer_has_WaitingProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Event_has_State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Event_has_WaitingProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MemorySection_has_cacheSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ModuleHMTableErrorAction_has_ModuleRecoveryAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ModuleHMTable_has_ErrorActions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_ModuleHMTabless"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_MultiPartitionHMTables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_PartitionHMTables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_PartitionTimeWindows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_Partitions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module_has_SystemErrors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ModuleRecoveryAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MultiPartitionHMTable_has_ErrorActions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_PartitionRecoveryAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartitionHMTable_has_ErrorActions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Blackboards"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Buffers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_ErrorHandlerProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Events"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_MemoryRegions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_OperatingMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_PartitionHMTable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Ports"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Processes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_Semaphores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partition_has_StartCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Port_has_Direction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Process_has_Deadline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Process_has_State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#QueuingPort_has_Direction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#QueuingPort_has_QueuingDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#QueuingPort_has_WaitingProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SamplingPort_has_Direction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SamplingPort_has_LastMsgValidity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Semaphore_has_QueuingDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Semaphore_has_WaitingProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Blackboard_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Buffer_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_ModuleHMTable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_MultiPartitionHMTable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_PartitionTHTable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Event_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_MemoryRegion_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_ModuleHMTable_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_MultiPartitionHMTable_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_MultiPartitionHMTable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Partition_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Port_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Blackboard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Buffer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_QueuingPort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Semaphore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Process_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_Semaphore_of_Partition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a_SystemError_of_Module"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Blackboard_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Blackboard_has_MaxMessageSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Blackboard_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Buffer_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Buffer_has_MaxMessageSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Buffer_has_MaxNbMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Buffer_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Buffer_has_NbMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ErrorIdentifier_has_Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ErrorIdentifier_has_ErrorIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Event_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Event_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemoryRegion_has_AccessRights"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemoryRegion_has_Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemoryRegion_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemoryRegion_has_Size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemoryRegion_has_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySection_has_AccessRights"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySection_has_Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySection_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySection_has_Size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySection_has_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModuleHMTableErrorAction_has_ErrorIdntifierRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModuleHMTable_has_Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModuleHMTable_has_StateIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Module_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorIdnetifierRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionHMTableErrorAction_has_ErrorIdentifierRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionHMTable_has_MultiPartitionHMTableNameRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionHMTable_has_TableIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionHMTable_has_TableName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionTimeWindow_has_Duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionTimeWindow_has_PartitionNameRef"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionTimeWindow_has_Period"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PartitionTimeWindow_has_PeriodicProcessingStart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_Duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_EntryPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_Identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_LockLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_Period"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Partition_has_SystemPartition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Port_has_MaxMessageSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Port_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_BasePriority"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_CurrentPriority"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_DeadlineTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_EntryPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_Period"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_StackSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Process_has_TimeCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QueuingPort_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QueuingPort_has_MaxMessageSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QueuingPort_has_MaxNbMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QueuingPort_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QueuingPort_has_NbMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SamplingPort_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SamplingPort_has_MaxMessageSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SamplingPort_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SamplingPort_has_RefreshPeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semaphore_has_CurrentValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semaphore_has_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semaphore_has_MaximumValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semaphore_has_Name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#APPLICATION_ERROR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COLD_RESTART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COLD_START"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cache_CopyBack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cache_Off"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cache_WriteThrough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DEADLINE_MISSED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DESTINATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DORMANT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DOWN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EMPTY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FIFO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HARD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HARDWARE_FAULT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HM_MODULE_RESTART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HM_PARTITION_RESTART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IDLE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IGNORE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ILLEGAL_REQUEST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INVALID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INVALID_CONFIG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INVALID_MODE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INVALID_PARAM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MEMORY_VIOLATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NORMAL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NORMAL_START"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NOT_AVAILABLE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NO_ACTION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NO_ERROR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NUMERIC_ERROR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCCUPIED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PARTITION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PARTITION_RESTART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POWER_FAIL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PRIORITY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PROCESS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#READY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RESET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RUNNING"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SHUTDOWN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOFT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOURCE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STACK_OVERFLOW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TIMED_OUT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VALID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WAITING"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WARM_RESTART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WARM_START"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#ARINC:AddressType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#ARINC:NameType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CacheSettingType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Cache_CopyBack"/>
+            <NamedIndividual IRI="#Cache_Off"/>
+            <NamedIndividual IRI="#Cache_WriteThrough"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DeadlineType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HARD"/>
+            <NamedIndividual IRI="#SOFT"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EmptyIndicatorType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#EMPTY"/>
+            <NamedIndividual IRI="#OCCUPIED"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ErrorCodeType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#APPLICATION_ERROR"/>
+            <NamedIndividual IRI="#DEADLINE_MISSED"/>
+            <NamedIndividual IRI="#HARDWARE_FAULT"/>
+            <NamedIndividual IRI="#ILLEGAL_REQUEST"/>
+            <NamedIndividual IRI="#MEMORY_VIOLATION"/>
+            <NamedIndividual IRI="#NUMERIC_ERROR"/>
+            <NamedIndividual IRI="#POWER_FAIL"/>
+            <NamedIndividual IRI="#STACK_OVERFLOW"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventStateType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#DOWN"/>
+            <NamedIndividual IRI="#UP"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#IGNORE"/>
+            <NamedIndividual IRI="#RESET"/>
+            <NamedIndividual IRI="#SHUTDOWN"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#MODULE"/>
+            <NamedIndividual IRI="#PARTITION"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OperatingModeType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#COLD_START"/>
+            <NamedIndividual IRI="#IDLE"/>
+            <NamedIndividual IRI="#NORMAL"/>
+            <NamedIndividual IRI="#WARM_START"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#PARTITION"/>
+            <NamedIndividual IRI="#PROCESS"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#COLD_RESTART"/>
+            <NamedIndividual IRI="#IDLE"/>
+            <NamedIndividual IRI="#IGNORE"/>
+            <NamedIndividual IRI="#WARM_RESTART"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PortDirectionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#DESTINATION"/>
+            <NamedIndividual IRI="#SOURCE"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProcessStateType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#DORMANT"/>
+            <NamedIndividual IRI="#READY"/>
+            <NamedIndividual IRI="#RUNNING"/>
+            <NamedIndividual IRI="#WAITING"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QueuingDisciplineType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#FIFO"/>
+            <NamedIndividual IRI="#PRIORITY"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ReturnCodeType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#INVALID_CONFIG"/>
+            <NamedIndividual IRI="#INVALID_MODE"/>
+            <NamedIndividual IRI="#INVALID_PARAM"/>
+            <NamedIndividual IRI="#NOT_AVAILABLE"/>
+            <NamedIndividual IRI="#NO_ACTION"/>
+            <NamedIndividual IRI="#NO_ERROR"/>
+            <NamedIndividual IRI="#TIMED_OUT"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StartConditionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HM_MODULE_RESTART"/>
+            <NamedIndividual IRI="#HM_PARTITION_RESTART"/>
+            <NamedIndividual IRI="#NORMAL_START"/>
+            <NamedIndividual IRI="#PARTITION_RESTART"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ValidityType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#INVALID"/>
+            <NamedIndividual IRI="#VALID"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Blackboard"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buffer"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CacheSettingType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedBlackboard"/>
+        <Class IRI="#Blackboard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedBuffer"/>
+        <Class IRI="#Buffer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedQueuingPort"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedQueuingPort"/>
+        <Class IRI="#QueuingPort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedSamplingPort"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedSamplingPort"/>
+        <Class IRI="#SamplingPort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreatedSemaphore"/>
+        <Class IRI="#Semaphore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeadlineType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmptyIndicatorType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnumDataType"/>
+        <Class IRI="#BasicDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErrorCodeType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErrorIdentifierType"/>
+        <Class IRI="#BasicDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventStateType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemoryRegion"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemorySectionType"/>
+        <Class IRI="#BasicDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleHMTable"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiPartitionHMTable"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingModeType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partition"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartitionHMTable"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartitionTimeWindow"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortDirectionType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessStateType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QueuingDisciplineType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QueuingPort"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReturnCodeType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SamplingPort"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semaphore"/>
+        <Class IRI="#CreatedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartConditionType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemError"/>
+        <Class IRI="#ConfiguredThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValidityType"/>
+        <Class IRI="#EnumDataType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#QueuingPort"/>
+        <Class IRI="#SamplingPort"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#APPLICATION_ERROR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#COLD_RESTART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingModeType"/>
+        <NamedIndividual IRI="#COLD_START"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CacheSettingType"/>
+        <NamedIndividual IRI="#Cache_CopyBack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CacheSettingType"/>
+        <NamedIndividual IRI="#Cache_Off"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CacheSettingType"/>
+        <NamedIndividual IRI="#Cache_WriteThrough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#DEADLINE_MISSED"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PortDirectionType"/>
+        <NamedIndividual IRI="#DESTINATION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessStateType"/>
+        <NamedIndividual IRI="#DORMANT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventStateType"/>
+        <NamedIndividual IRI="#DOWN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmptyIndicatorType"/>
+        <NamedIndividual IRI="#EMPTY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QueuingDisciplineType"/>
+        <NamedIndividual IRI="#FIFO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeadlineType"/>
+        <NamedIndividual IRI="#HARD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#HARDWARE_FAULT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StartConditionType"/>
+        <NamedIndividual IRI="#HM_MODULE_RESTART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StartConditionType"/>
+        <NamedIndividual IRI="#HM_PARTITION_RESTART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingModeType"/>
+        <NamedIndividual IRI="#IDLE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#IDLE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#IGNORE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#IGNORE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#ILLEGAL_REQUEST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ValidityType"/>
+        <NamedIndividual IRI="#INVALID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#INVALID_CONFIG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#INVALID_MODE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#INVALID_PARAM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#MEMORY_VIOLATION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+        <NamedIndividual IRI="#MODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingModeType"/>
+        <NamedIndividual IRI="#NORMAL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StartConditionType"/>
+        <NamedIndividual IRI="#NORMAL_START"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#NOT_AVAILABLE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#NO_ACTION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#NO_ERROR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#NUMERIC_ERROR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmptyIndicatorType"/>
+        <NamedIndividual IRI="#OCCUPIED"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+        <NamedIndividual IRI="#PARTITION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+        <NamedIndividual IRI="#PARTITION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StartConditionType"/>
+        <NamedIndividual IRI="#PARTITION_RESTART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#POWER_FAIL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QueuingDisciplineType"/>
+        <NamedIndividual IRI="#PRIORITY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+        <NamedIndividual IRI="#PROCESS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessStateType"/>
+        <NamedIndividual IRI="#READY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#RESET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessStateType"/>
+        <NamedIndividual IRI="#RUNNING"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#SHUTDOWN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeadlineType"/>
+        <NamedIndividual IRI="#SOFT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PortDirectionType"/>
+        <NamedIndividual IRI="#SOURCE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorCodeType"/>
+        <NamedIndividual IRI="#STACK_OVERFLOW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReturnCodeType"/>
+        <NamedIndividual IRI="#TIMED_OUT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventStateType"/>
+        <NamedIndividual IRI="#UP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ValidityType"/>
+        <NamedIndividual IRI="#VALID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessStateType"/>
+        <NamedIndividual IRI="#WAITING"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+        <NamedIndividual IRI="#WARM_RESTART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingModeType"/>
+        <NamedIndividual IRI="#WARM_START"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Blackboard_has_EmptyIndicator"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Blackboard_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Buffer_has_QueuingDiscipline"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Buffer_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Event_has_State"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Event_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MemorySection_has_cacheSetting"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ModuleHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ModuleHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_ModuleHMTabless"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_MultiPartitionHMTables"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_PartitionHMTables"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_PartitionTimeWindows"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_Partitions"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Module_has_SystemErrors"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorLevel"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MultiPartitionHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorCode"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorLevel"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_PartitionRecoveryAction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PartitionHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Blackboards"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Buffers"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_ErrorHandlerProcess"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Events"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_MemoryRegions"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_OperatingMode"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_PartitionHMTable"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Ports"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Processes"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_Semaphores"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Partition_has_StartCondition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Port_has_Direction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Process_has_Deadline"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Process_has_State"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#QueuingPort_has_Direction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#QueuingPort_has_QueuingDiscipline"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#QueuingPort_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#SamplingPort_has_Direction"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#SamplingPort_has_LastMsgValidity"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Semaphore_has_QueuingDiscipline"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Semaphore_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Blackboard_of_Partition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Buffer_of_Partition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_ModuleHMTable"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_MultiPartitionHMTable"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_PartitionTHTable"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Event_of_Partition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_MemoryRegion_of_Partition"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_ModuleHMTable_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_MultiPartitionHMTable_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_MultiPartitionHMTable"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Partition"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Partition_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Port_of_Partition"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Blackboard"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Buffer"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Event"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_QueuingPort"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Semaphore"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Process_of_Partition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_Semaphore_of_Partition"/>
+        <ObjectProperty IRI="#CreatedObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a_SystemError_of_Module"/>
+        <ObjectProperty IRI="#ConfiguredObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Blackboard_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Blackboard"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Buffer_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Buffer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Event_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Event"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ModuleHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_ModuleHMTable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_ModuleHMTabless"/>
+        <ObjectProperty IRI="#is_a_ModuleHMTable_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_MultiPartitionHMTables"/>
+        <ObjectProperty IRI="#is_a_MultiPartitionHMTable_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_PartitionHMTables"/>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_PartitionTimeWindows"/>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_Partitions"/>
+        <ObjectProperty IRI="#is_a_Partition_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Module_has_SystemErrors"/>
+        <ObjectProperty IRI="#is_a_SystemError_of_Module"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#MultiPartitionHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_MultiPartitionHMTable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#PartitionHMTable_has_ErrorActions"/>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_PartitionTHTable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Blackboards"/>
+        <ObjectProperty IRI="#is_a_Blackboard_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Buffers"/>
+        <ObjectProperty IRI="#is_a_Buffer_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Events"/>
+        <ObjectProperty IRI="#is_a_Event_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_MemoryRegions"/>
+        <ObjectProperty IRI="#is_a_MemoryRegion_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Ports"/>
+        <ObjectProperty IRI="#is_a_Port_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Processes"/>
+        <ObjectProperty IRI="#is_a_Process_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partition_has_Semaphores"/>
+        <ObjectProperty IRI="#is_a_Semaphore_of_Partition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#QueuingPort_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_QueuingPort"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Semaphore_has_WaitingProcesses"/>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Semaphore"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Blackboard_has_EmptyIndicator"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Blackboard_has_WaitingProcesses"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Buffer_has_QueuingDiscipline"/>
+        <Class IRI="#CreatedBuffer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Buffer_has_WaitingProcesses"/>
+        <Class IRI="#CreatedBuffer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Event_has_State"/>
+        <Class IRI="#CreatedEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Event_has_WaitingProcesses"/>
+        <Class IRI="#CreatedEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MemorySection_has_cacheSetting"/>
+        <Class IRI="#MemorySectionType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ModuleHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ModuleHMTable_has_ErrorActions"/>
+        <Class IRI="#ModuleHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_ModuleHMTabless"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_MultiPartitionHMTables"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_PartitionHMTables"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_PartitionTimeWindows"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_Partitions"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Module_has_SystemErrors"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorLevel"/>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MultiPartitionHMTable_has_ErrorActions"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorCode"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorLevel"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_PartitionRecoveryAction"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartitionHMTable_has_ErrorActions"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Blackboards"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Buffers"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_ErrorHandlerProcess"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Events"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_MemoryRegions"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_OperatingMode"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_PartitionHMTable"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Ports"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Processes"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_Semaphores"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Partition_has_StartCondition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Port_has_Direction"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Process_has_Deadline"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Process_has_State"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#QueuingPort_has_QueuingDiscipline"/>
+        <Class IRI="#CreatedQueuingPort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#QueuingPort_has_WaitingProcesses"/>
+        <Class IRI="#CreatedQueuingPort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SamplingPort_has_Direction"/>
+        <Class IRI="#SamplingPort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SamplingPort_has_LastMsgValidity"/>
+        <Class IRI="#CreatedSamplingPort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Semaphore_has_QueuingDiscipline"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Semaphore_has_WaitingProcesses"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Blackboard_of_Partition"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Buffer_of_Partition"/>
+        <Class IRI="#CreatedBuffer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_ModuleHMTable"/>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_MultiPartitionHMTable"/>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_PartitionTHTable"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Event_of_Partition"/>
+        <Class IRI="#CreatedEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_MemoryRegion_of_Partition"/>
+        <Class IRI="#MemoryRegion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_ModuleHMTable_of_Module"/>
+        <Class IRI="#ModuleHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_MultiPartitionHMTable_of_Module"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_Module"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_MultiPartitionHMTable"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Module"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Partition"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Partition_of_Module"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Port_of_Partition"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Blackboard"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Buffer"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Event"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_QueuingPort"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Semaphore"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Process_of_Partition"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_Semaphore_of_Partition"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a_SystemError_of_Module"/>
+        <Class IRI="#SystemError"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Blackboard_has_EmptyIndicator"/>
+        <Class IRI="#EmptyIndicatorType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Blackboard_has_WaitingProcesses"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Buffer_has_QueuingDiscipline"/>
+        <Class IRI="#QueuingDisciplineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Buffer_has_WaitingProcesses"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Event_has_State"/>
+        <Class IRI="#EventStateType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Event_has_WaitingProcesses"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MemorySection_has_cacheSetting"/>
+        <Class IRI="#CacheSettingType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ModuleHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ModuleHMTable_has_ErrorActions"/>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_ModuleHMTabless"/>
+        <Class IRI="#ModuleHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_MultiPartitionHMTables"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_PartitionHMTables"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_PartitionTimeWindows"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_Partitions"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Module_has_SystemErrors"/>
+        <Class IRI="#SystemError"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorLevel"/>
+        <Class IRI="#MultiPartitionHMTableErrorLevelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MultiPartitionHMTableErrorAction_has_ModuleRecoveryAction"/>
+        <Class IRI="#ModuleLevelErrorRecoveryActionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MultiPartitionHMTable_has_ErrorActions"/>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorCode"/>
+        <Class IRI="#ErrorCodeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_ErrorLevel"/>
+        <Class IRI="#PartitionHMTableErrorLevelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartitionHMTableErrorAction_has_PartitionRecoveryAction"/>
+        <Class IRI="#PartitionLevelErrorRecoveryActionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartitionHMTable_has_ErrorActions"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Blackboards"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Buffers"/>
+        <Class IRI="#CreatedBuffer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_ErrorHandlerProcess"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Events"/>
+        <Class IRI="#CreatedEvent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_MemoryRegions"/>
+        <Class IRI="#MemoryRegion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_OperatingMode"/>
+        <Class IRI="#OperatingModeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_PartitionHMTable"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Ports"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Processes"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_Semaphores"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Partition_has_StartCondition"/>
+        <Class IRI="#StartConditionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Port_has_Direction"/>
+        <Class IRI="#PortDirectionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Process_has_Deadline"/>
+        <Class IRI="#DeadlineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Process_has_State"/>
+        <Class IRI="#ProcessStateType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#QueuingPort_has_QueuingDiscipline"/>
+        <Class IRI="#QueuingDisciplineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#QueuingPort_has_WaitingProcesses"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SamplingPort_has_Direction"/>
+        <Class IRI="#PortDirectionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SamplingPort_has_LastMsgValidity"/>
+        <Class IRI="#ValidityType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Semaphore_has_QueuingDiscipline"/>
+        <Class IRI="#QueuingDisciplineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Semaphore_has_WaitingProcesses"/>
+        <Class IRI="#CreatedProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Blackboard_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Buffer_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_ModuleHMTable"/>
+        <Class IRI="#ModuleHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_MultiPartitionHMTable"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_ErrorAction_of_PartitionTHTable"/>
+        <Class IRI="#PartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Event_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_MemoryRegion_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_ModuleHMTable_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_MultiPartitionHMTable_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_PartitionHMTable_of_MultiPartitionHMTable"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_PartitionTimeWindow_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Partition_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Port_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Blackboard"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Buffer"/>
+        <Class IRI="#CreatedBuffer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Event"/>
+        <Class IRI="#CreatedEvent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_QueuingPort"/>
+        <Class IRI="#CreatedQueuingPort"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_WaitingFor_Semaphore"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Process_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_Semaphore_of_Partition"/>
+        <Class IRI="#Partition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a_SystemError_of_Module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Blackboard_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Blackboard_has_MaxMessageSize"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Blackboard_has_Name"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Buffer_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Buffer_has_MaxMessageSize"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Buffer_has_MaxNbMessage"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Buffer_has_Name"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Buffer_has_NbMessage"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CreatedDataProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ErrorIdentifier_has_Description"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ErrorIdentifier_has_ErrorIdentifier"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Event_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Event_has_Name"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemoryRegion_has_AccessRights"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemoryRegion_has_Address"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemoryRegion_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemoryRegion_has_Size"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemoryRegion_has_Type"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySection_has_AccessRights"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySection_has_Address"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySection_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySection_has_Size"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySection_has_Type"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ModuleHMTableErrorAction_has_ErrorIdntifierRef"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ModuleHMTable_has_Description"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ModuleHMTable_has_StateIdentifier"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Module_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorIdnetifierRef"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableIdentifier"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableName"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionHMTableErrorAction_has_ErrorIdentifierRef"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionHMTable_has_MultiPartitionHMTableNameRef"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionHMTable_has_TableIdentifier"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionHMTable_has_TableName"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionTimeWindow_has_Duration"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionTimeWindow_has_PartitionNameRef"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionTimeWindow_has_Period"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PartitionTimeWindow_has_PeriodicProcessingStart"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_Duration"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_EntryPoint"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_Identifier"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_LockLevel"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_Period"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Partition_has_SystemPartition"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Port_has_MaxMessageSize"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Port_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_BasePriority"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_CurrentPriority"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_DeadlineTime"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_EntryPoint"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_Name"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_Period"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_StackSize"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Process_has_TimeCapacity"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QueuingPort_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QueuingPort_has_MaxMessageSize"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QueuingPort_has_MaxNbMessage"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QueuingPort_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QueuingPort_has_NbMessage"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SamplingPort_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SamplingPort_has_MaxMessageSize"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SamplingPort_has_Name"/>
+        <DataProperty IRI="#ConfiguredDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SamplingPort_has_RefreshPeriod"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Semaphore_has_CurrentValue"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Semaphore_has_ID"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Semaphore_has_MaximumValue"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Semaphore_has_Name"/>
+        <DataProperty IRI="#CreatedDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Blackboard_has_ID"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Blackboard_has_MaxMessageSize"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Blackboard_has_Name"/>
+        <Class IRI="#CreatedBlackboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Buffer_has_ID"/>
+        <Class IRI="#CreatedBuffer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Buffer_has_MaxMessageSize"/>
+        <Class IRI="#CreatedBuffer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Buffer_has_MaxNbMessage"/>
+        <Class IRI="#CreatedBuffer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Buffer_has_Name"/>
+        <Class IRI="#CreatedBuffer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Buffer_has_NbMessage"/>
+        <Class IRI="#CreatedBuffer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ErrorIdentifier_has_Description"/>
+        <Class IRI="#ErrorIdentifierType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ErrorIdentifier_has_ErrorIdentifier"/>
+        <Class IRI="#ErrorIdentifierType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Event_has_ID"/>
+        <Class IRI="#CreatedEvent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Event_has_Name"/>
+        <Class IRI="#CreatedEvent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemoryRegion_has_AccessRights"/>
+        <Class IRI="#MemoryRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemoryRegion_has_Address"/>
+        <Class IRI="#MemoryRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemoryRegion_has_Name"/>
+        <Class IRI="#MemoryRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemoryRegion_has_Size"/>
+        <Class IRI="#MemoryRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemoryRegion_has_Type"/>
+        <Class IRI="#MemoryRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySection_has_AccessRights"/>
+        <Class IRI="#MemorySectionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySection_has_Address"/>
+        <Class IRI="#MemorySectionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySection_has_Name"/>
+        <Class IRI="#MemorySectionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySection_has_Size"/>
+        <Class IRI="#MemorySectionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySection_has_Type"/>
+        <Class IRI="#MemorySectionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModuleHMTableErrorAction_has_ErrorIdntifierRef"/>
+        <Class IRI="#ModuleHMTableErrorAction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModuleHMTable_has_Description"/>
+        <Class IRI="#ModuleHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModuleHMTable_has_StateIdentifier"/>
+        <Class IRI="#ModuleHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Module_has_Name"/>
+        <Class IRI="#Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorIdnetifierRef"/>
+        <Class IRI="#MultiPartitionHMTableErrorAction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableIdentifier"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableName"/>
+        <Class IRI="#MultiPartitionHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionHMTableErrorAction_has_ErrorIdentifierRef"/>
+        <Class IRI="#PartitionHMTableErrorAction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionHMTable_has_MultiPartitionHMTableNameRef"/>
+        <Class IRI="#PartitionHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionHMTable_has_TableIdentifier"/>
+        <Class IRI="#PartitionHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionHMTable_has_TableName"/>
+        <Class IRI="#PartitionHMTable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionTimeWindow_has_Duration"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionTimeWindow_has_PartitionNameRef"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionTimeWindow_has_Period"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PartitionTimeWindow_has_PeriodicProcessingStart"/>
+        <Class IRI="#PartitionTimeWindow"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_Duration"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_EntryPoint"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_Identifier"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_LockLevel"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_Name"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_Period"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Partition_has_SystemPartition"/>
+        <Class IRI="#Partition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Port_has_MaxMessageSize"/>
+        <Class IRI="#Port"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Port_has_Name"/>
+        <Class IRI="#Port"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_BasePriority"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_CurrentPriority"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_DeadlineTime"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_EntryPoint"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_ID"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_Name"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_Period"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_StackSize"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Process_has_TimeCapacity"/>
+        <Class IRI="#CreatedProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QueuingPort_has_ID"/>
+        <Class IRI="#CreatedQueuingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QueuingPort_has_MaxMessageSize"/>
+        <Class IRI="#QueuingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QueuingPort_has_MaxNbMessage"/>
+        <Class IRI="#QueuingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QueuingPort_has_Name"/>
+        <Class IRI="#QueuingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QueuingPort_has_NbMessage"/>
+        <Class IRI="#CreatedQueuingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingPort_has_ID"/>
+        <Class IRI="#CreatedSamplingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingPort_has_MaxMessageSize"/>
+        <Class IRI="#SamplingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingPort_has_Name"/>
+        <Class IRI="#SamplingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingPort_has_RefreshPeriod"/>
+        <Class IRI="#CreatedSamplingPort"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Semaphore_has_CurrentValue"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Semaphore_has_ID"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Semaphore_has_MaximumValue"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Semaphore_has_Name"/>
+        <Class IRI="#CreatedSemaphore"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Blackboard_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Blackboard_has_MaxMessageSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Blackboard_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Buffer_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Buffer_has_MaxMessageSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Buffer_has_MaxNbMessage"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Buffer_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Buffer_has_NbMessage"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ErrorIdentifier_has_Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ErrorIdentifier_has_ErrorIdentifier"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Event_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Event_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemoryRegion_has_AccessRights"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemoryRegion_has_Address"/>
+        <Datatype IRI="#ARINC:AddressType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemoryRegion_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemoryRegion_has_Size"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemoryRegion_has_Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySection_has_AccessRights"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySection_has_Address"/>
+        <Datatype IRI="#ARINC:AddressType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySection_has_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySection_has_Size"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySection_has_Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModuleHMTableErrorAction_has_ErrorIdntifierRef"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModuleHMTable_has_Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModuleHMTable_has_StateIdentifier"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Module_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MultiPartitionHMTableErrorAction_has_ErrorIdnetifierRef"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableIdentifier"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MultiPartitionHMTable_has_TableName"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionHMTableErrorAction_has_ErrorIdentifierRef"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionHMTable_has_MultiPartitionHMTableNameRef"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionHMTable_has_TableIdentifier"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionHMTable_has_TableName"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionTimeWindow_has_Duration"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionTimeWindow_has_PartitionNameRef"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionTimeWindow_has_Period"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PartitionTimeWindow_has_PeriodicProcessingStart"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_Duration"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_EntryPoint"/>
+        <Datatype IRI="#ARINC:AddressType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_Identifier"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_LockLevel"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_Period"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Partition_has_SystemPartition"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Port_has_MaxMessageSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Port_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_BasePriority"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_CurrentPriority"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_DeadlineTime"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_EntryPoint"/>
+        <Datatype IRI="#ARINC:AddressType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_Period"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_StackSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Process_has_TimeCapacity"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#QueuingPort_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#QueuingPort_has_MaxMessageSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#QueuingPort_has_MaxNbMessage"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#QueuingPort_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#QueuingPort_has_NbMessage"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SamplingPort_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SamplingPort_has_MaxMessageSize"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SamplingPort_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SamplingPort_has_RefreshPeriod"/>
+        <Datatype IRI="#ARINC:TimeType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Semaphore_has_CurrentValue"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Semaphore_has_ID"/>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Semaphore_has_MaximumValue"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Semaphore_has_Name"/>
+        <Datatype IRI="#ARINC:NameType"/>
+    </DataPropertyRange>
+    <DatatypeDefinition>
+        <Datatype IRI="#ARINC:AddressType"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#ARINC:IdentifierType"/>
+        <Datatype abbreviatedIRI="xsd:hexBinary"/>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#ARINC:NameType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:hexBinary"/>
+        <Datatype abbreviatedIRI="xsd:hexBinary"/>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:hexBinary"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
